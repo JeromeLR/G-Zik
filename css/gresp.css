@@ -1,0 +1,413 @@
+#logoRetour{
+    background-image: url('../img/cloud.png');
+    background-repeat:no-repeat;
+    /*padding:10px;*/
+}
+#coin{
+    visibility:hidden;
+}
+
+
+/*WIDE*/
+@media (max-width:1040px) {
+    #Interface{
+        width:710px;
+    }
+    .guitar-outer{
+        position: relative;
+        top:200px;
+    }
+    .guitar-head{
+        top:-200px;
+        width: 400px;
+        height: 400px!important;
+    }
+}
+
+/*smartphone  VERTICAL*/
+@media (max-width: 480px) {
+    #gresponsive{
+        color:red;
+        margin:auto 2px;
+    }
+
+
+    body{
+        background: none;
+        max-width: 480px;
+        width:480px;
+    }
+
+
+    #logo,#logotxt,#gz,
+    #logoRetour,#ghref,header,#exoschem,#nbFrets,#nbCordes,
+    #flame,#coin,#champi
+    {
+        visibility:hidden;
+        width:0px;
+        height:0px;
+    }
+    #Interface{
+        visibility:hidden;
+        max-width: 480px;
+        margin-top: 0px;
+        top:0px;
+        padding: 0px;
+        box-shadow:none;
+        z-index: 10;
+        height:80px;
+
+    }
+    #interfacePrincipale{
+        /*max-height: 40px;*/
+        /*margin: auto;*/
+        padding: 5px;
+        margin:5px 5px 5px 5px;
+        box-shadow:none;
+        z-index: 10;
+
+    }
+    .IntBtnRep,.AccRep{
+        visibility:hidden;
+        width:0px;height:0px;
+    }
+    #choixp{
+        width:0px;
+        height:0px;
+    }
+    #InterfExoQuest{
+        width:60px;
+        top:0;
+        /*margin : 5px;*/
+        box-shadow:none;
+        max-width:350px;
+        margin:0px;
+        padding: 0;
+        z-index: 10;
+        border-radius: 0;
+        background: none;
+    }
+    #BtnRandNote{
+        margin:0 0 5px 5px;
+        width:60px;
+    }
+    #optionsExo{
+        width:100px;
+        padding: 0px;
+        margin:0px;
+        z-index: 10;
+
+    }
+    #optionsExo{
+        /*width:70px;*/
+    }
+    #case,#corde{
+        width:90px;
+    }
+    #InterfExoRep{
+        width:240px;
+        width:0px;
+        box-shadow:none;
+        float:left;
+        margin:0px;
+        height:60px;
+        height:0px;
+        background: none;
+        visibility:hidden;
+    }
+    #NotesBtnRep{
+        visibility: hidden;
+    }
+
+    .guitar-outer{
+        width:300px;
+        /*display:inline;*/
+        /*position:relative;*/
+        float:left;
+        /*left:0;*/
+       /*top:-100px;*/
+        z-index: 0;
+
+    }
+    .guitar-head{
+        height:70px;
+        background-position: 50% 100%;
+    }
+
+    .guitarCounter{
+        top: 78px;
+        left: 50px;
+        width: 250px;
+        height: 50px;
+        /*background: none;*/
+        /*color:black;*/
+    }
+    .guitar-outer,.guitar-head{
+        visibility:hidden;
+    }
+
+    #score{
+        color:black;
+        visibility: hidden;
+    }
+    #InterfExoRep{
+        visibility: visible;
+    }
+    #gtest{
+        visibility: visible;
+        /*width:0px;height:0px;*/
+    }
+}
+
+/*and (min-height: 479px)*/
+
+
+@media screen and (orientation:landscape) and (max-width:800px) {
+    body{
+        max-height: 480px;
+        background: none;
+        top:0;
+    }
+    header{
+        width: 0;height:0px;visibility:hidden;
+    }
+    .guitar-outer{
+        width:100%;
+    }
+    .guitar-head{
+        visibility:visible;
+
+    }
+    #Interface{
+        position:fixed;
+        z-index: 10;
+        height:80px;
+        padding: 0;margin:0;
+        top:0;
+        width:100%;
+        border-radius: 0;
+    }
+    #InterfExoQuest{
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;margin:0;
+        width:74px;
+        background: none;
+
+    }
+    .guitar-outer{
+        z-index: 0;
+        position:relative;
+        top:108px;
+        left:-48px;
+        height:71px;
+    }
+    #score{
+        color:black
+    }
+    #InterfExoRep{
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;margin:0;
+        /*width:74px;*/
+        background: none;
+    }
+    .guitar-head{
+        position:absolute;
+        width: 130px;
+        /*background: url(../img/hori-head-mobile.png) no-repeat left center;*/
+        /*background-color: black;*/
+        height:300px!important;
+        top:-114px;
+    }
+    .guitarCounter{
+        color:black;
+        z-index: 10;
+
+        position:fixed;
+        top: 8px;
+        left: 470px;
+    }
+    #score{
+        top:5px;
+        left:0px;
+    }
+    #gtest{
+        position:fixed;
+        left:330px;
+    }
+    .guitcountimg{
+        width:0px;
+        heght:0px;
+        background: none;
+    }
+    #gtest,#interfacePrincipale,.vect,#flame,#coin,#champi,
+    #nbFrets,#nbCordes,#NotesInfoOct,#logoRetour,#optionsExo,
+    #NotesBtnRepSharp{
+        visibility: hidden;
+        width:0px;height:0px;padding:0px;margin:0px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .guitar-outer,.guitar-head{
+        visibility:hidden;
+    }
+    .guitarCounter{
+        top: 78px;
+        left: 50px;
+        width: 250px;
+        height: 50px;
+        /*background: none;*/
+        /*color:black;*/
+    }
+    .guitcountimg{
+        width:200px;
+        heght:200px;
+        background: none;
+    }
+    #gtest {
+        visibility: visible;
+        position: fixed;
+        left: 0px;
+    }
+}
+
+#ginfo{
+    background-color: black;
+    position:absolute;
+    left:53%;
+    width:80px;height:80px;
+    z-index:200;
+        -webkit-border-radius: 0 0 100% 100%;
+        -moz-border-radius: 0 0 100% 100%;
+        border-radius: 0 0 100% 100%;
+    text-align: center;
+    color: white;
+
+    -moz-transition:width 0.5s, height 0.5s, background-color 0.5s, -moz-transform 0.5s;
+    -webkit-transition:width 0.5s, height 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+    -o-transition:width 0.5s, height 0.5s, background-color 0.5s, -o-transform 0.5s;
+    transition:width 0.5s, height 0.5s, background-color 0.5s, transform 0.5s;
+}
+
+
+#ginfo p{
+    padding:20px 15px;
+    margin:10px 5px;
+    font-size: 18px;
+    border-style:solid;
+    border-width:2px;
+    border-color: white;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;/* Utilisé pour la transition sur chrome et safari */
+    -moz-transition: -moz-transform 0.2s ease-in-out;/* Utilisé pour la transition sur Firefox */
+    transition: transform 0.2s ease-in-out;
+}
+
+#ginfo:hover p{
+
+    -webkit-transform: rotate(-15deg);/* Agrandissement de la photo à l'échelle 1.4 et rotation de -15 degrés */
+    -moz-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* L'ombre appliquée sur la photo au survol */
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal{
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color: #222;
+    border: 2px solid #333;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+.modal-header{
+    padding:20px 15px 10px 15px;
+    border-bottom: 1px solid #000;
+}
+.modal-body{
+    color:white;
+    padding:2px 15px 15px 10px;
+}
+
+ol li ul li{
+         /*line-height:1.5 ;*/
+    margin-bottom: 3px;
+}
+
+.autre{
+    color: #cff8ff;
+}
+.grouge{
+    color:red;
+}
+.ggras{
+    font-weight: bold;
+}
+
+.modal-footer{
+    -webkit-border-radius: 0 0 30px 30px;
+    padding: 10px 8px 8px;
+    background-color: #222;
+    /*border-top: 1px solid #000;*/
+    margin: auto 0;
+}
+.modal-footer a{
+    display:block;
+    width:50px;
+    margin:0px auto;
+
+}
+.modal-header h3{
+    color :white;
+}
+.modal-body p{
+    color: #fff6fe;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.italic{
+    font-style: italic;
+}
+.rouge{
+    display: inline;
+    color:red;
+}
+
+@media (max-width:1043px) {
+    #ginfo{
+        left:70%;
+    }
+}
+@media (max-width:800px) {
+    #ginfo{
+        visibility: hidden;
+    }
+}
+.close{
+    color:white;
+}
+/*@media (max-width:1267px) {*/
+    /*#ginfo{*/
+        /*left:90%;*/
+    /*}*/
+/*}*/
+/*@media (max-width:1151px) {*/
+    /*#ginfo{*/
+        /*left:93%;*/
+    /*}*/
+/*}*/
+@media (max-width:480px) {
+    #NotesBtnRepSharp{
+        visibility: hidden;
+    }
+}

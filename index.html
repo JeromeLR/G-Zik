@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js"> <![endif]-->
+    
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <title>G-Zik</title>
+    <meta name="description" content="Exercices d'apprentissage du manche de la guitare">
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;' name='viewport' />
+    <meta property="og:image" content="http://g-zik.bourdais.info/img/logo.png" />
+    <meta property="og:url" content="http://g-zik.bourdais.info/" />
+    <meta property="og:title" content="G-Zik" />
+    <meta property="og:description" content="Exercices d'apprentissage du manche de la guitare" />
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/font-awesome-ie7.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="counter/counter/css/style.css" />
+
+    <link rel="stylesheet" href="WIP/jquery-ui-1.10.3.custom/development-bundle/themes/base/jquery.ui.all.css">
+
+    <script src="WIP/jquery-ui-1.10.3.custom/development-bundle/jquery-1.9.1.js"></script>
+    <script src="WIP/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script>
+
+    <link rel="stylesheet" href="WIP/UI/css-toggle-switch/dist/toggle-switch.css">
+
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/gresp.css" />
+
+
+</head>
+
+<body>
+<!--<p id="gresponsive"></p>-->
+
+
+<header>
+    <div class="navbar navbar-fixed-top">
+        <div id="navin" class="navbar-inner">
+            <div class="containerg">
+                <a href="http://jerome.bourdais.info/index.html" id="index" class=" ">Jérôme Bourdais</a>
+                <ul class="nav pull-right">
+                    <a href="http://jerome.bourdais.info/contact.html" id="gzcont">
+                        <i class="icon-plane icon-large"></i>
+                        Contact
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="modal hide" id="infos">
+    <div class="modal-header"> <a class="close" data-dismiss="modal">×</a>
+        <h3>G-ZIK INFO</h3>
+    </div>
+    <div class="modal-body">
+        <ul>
+            <li>
+                <h3>Notes du manche</h3>
+                    <ul>
+                        <li>Choisir la zone de travail avec les <span class="grouge">curseurs rouges</span> autour du manche.</li>
+                        <li>Lancer une question avec le <span class="grouge">bouton rouge</span>.</li>
+                        <li>Répondre à l'aide des <span class="ggras">boutons sur la droite</span> : 7 notes de la gamme + 5 dièses.</li>
+                    </ul>
+                    <p></p><p></p>
+                    <p>Vous avez 2 essais pour trouver. La première erreur vous donne l'emplacement de la faute.</p>
+                    <p>Travailler seulement sur les cordes <span class="ggras">Mi grave et La</span> vous permettra de retrouver plus facilement les accords barrés.</p>
+                    <p><span class="ggras">Ne pas oublier</span> : 1 ton entre les notes sauf 1/2 entre Mi/Fa et Si/Do.</p>
+                    <p>Les cordes à vide en standard : Mi La Ré Sol Si Mi.</p>
+            </li>
+            <li>
+                <h3>Intervalles entres les notes</h3>
+                    <p class="autre">Exercice intéressant pour comprendre la <span class="ggras">construction des accords</span>.</p>
+                    <p class="blanc">Le but est de trouver l'intervalle entre 2 notes aléatoires.</p>
+                    <p>La première note se situera dans la zone qui dépend des <span class="grouge">curseurs rouges</span>.</p>
+                    <p class="autre">Idem, <span class="grouge">bouton rouge</span> pour une nouvelle question.</p>
+                    <p>Par exemple, la modification de la tièrce d'un accord change sa couleur de mineur en majeur.</p>
+            </li>
+            <li>
+                <h3>Accords</h3>
+                    <p class="autre">Questions sur les accords ouverts et/ou barrés.</p>
+                    <p class="blanc">De la même manière, le <span class="grouge">bouton rouge</span> sert à passer à la question suivante.</p>
+                    <p class="autre">Il existe bien sûr beaucoup plus d'accords, mais pour l'instant c'est déjà pas mal !</p>
+            </li>
+
+            <li>
+                <h3>Divers</h3>
+                <p>Oui les bruitages sont pourris, mais ça changera.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="modal-footer"><a class="btn btn" data-dismiss="modal">Fermer</a> </div>
+</div>
+
+<div id="ginfo" data-toggle="modal" href="#infos" ><p>Info</p></div>
+
+<!--<a class="btn btn-primary" data-toggle="modal" href="#infos" >Info</a>-->
+
+
+<a id="ghref" href="./contact/contact.html">
+<div id="logoRetour">
+    <div id="logo"></div>
+    <div id="logotxt">
+        <p id="gz">G-Zik</p>
+        Contact </br>& </br>Retour
+    </div>
+
+</div>
+</a>
+
+<div id="gtest"></div>
+
+<div id="Interface">
+    <div id="interfacePrincipale"  class="brdr ip">
+        <div id="exoschem" class="rad ipInfoExo switch-toggle switch-2 switch-candy switch-candy-red">
+            <input type="radio" id="ipExo" name="radioMenu" checked="checked"><label for="ipExo">Exercices</label>
+            <input type="radio" id="ipInfo" name="radioMenu"><label for="ipInfo">Schémas</label>
+            <a></a>
+        </div>
+        <div id="choixp" class="rad switch-toggle switch-3 switch-candy  switch-candy">
+            <input type="radio" id="ipNotes" name="radionia" checked="checked"><label for="ipNotes">Notes</label>
+            <input type="radio" id="ipIntervalles" name="radionia"><label for="ipIntervalles">Intervalles</label>
+            <input type="radio" id="ipAccords" name="radionia"><label for="ipAccords">Accords</label>
+            <a></a>
+        </div>
+        <div class="rad ipInfoNotes info switch-toggle switch-3 switch-candy switch-candy-blue">
+                <input type="radio" id="prout" name="radioInfoNotes" checked="checked"><label for="prout">?</label>
+                <input type="radio" id="toutes" name="radioInfoNotes"><label for="toutes">Toutes</label>
+                <!--<input type="radio" id="fret05" name="radioInfoNotes"><label for="fret05">Fret 0 5</label>-->
+                <input type="radio" id="octaves" name="radioInfoNotes"><label for="octaves">Octaves</label>
+                <a></a>
+        </div>
+        <div class="ipInfoInt IntInfo info"><button class="btn  btn-info">ToDo !</button></div>
+        <div class="ipInfoAcc AccInfo info"><button class="btn  btn-info">ToDo !</button></div>
+    </div><!--/interfInfo-->
+    <div id="InterfExoQuest" class="brdr">
+        <div id="BtnRandNote" class="NotesExo exo"><a href="#" class="push_button" id="NotesExoBtn"></a></div>
+        <div id="BtnRandInt" class="IntExo exo"><a href="#" class="push_button" id="gRandInt"></a></div>
+        <div id="BtnRandAcc" class="AccExo exo"><a href="#" class="push_button" id="randAcc"></a></div>
+        <div id="optionsExo"  title="A modifier directement sur la manche">
+            <div id="case">CASES : <input type="text" id="NotesAmountFrets" style="border:0" /></div>
+            </br></br>
+            <div id="corde">CORDES : <input type="text" id="NotesAmountCordes" style="border:0;" /></div>
+            </br>
+        </div>
+        <div id="optionAccord">
+            <div class="txtopt">Accords Simples</div>
+            <div id="radopen" class="radaccopt switch-toggle switch-candy">
+                <input id="onop" name="radopen" type="radio" checked>
+                <label for="onop" onclick="">On</label>
+                <input id="offop" name="radopen" type="radio">
+                <label for="offop" onclick="">Off</label><a></a>
+            </div>
+            <div class="txtopt">Accords Barrés</div>
+            <div id="radbarre" class="radaccopt switch-toggle switch-candy">
+                <input id="onba" name="radbarre" type="radio" >
+                <label for="onba" onclick="">On</label>
+                <input id="offba" name="radbarre" type="radio" checked>
+                <label for="offba" onclick="">Off</label><a></a>
+            </div>
+
+            <div id="plus" class="txtopt">Accords en +</div>
+            <div id="radplus" class="radaccopt switch-toggle switch-candy">
+                <input id="onpl" name="radplus" type="radio" >
+                <label for="onpl" onclick="">On</label>
+                <input id="offpl" name="radplus" type="radio" checked>
+                <label for="offpl" onclick="">Off</label><a></a>
+
+            </div>
+        </div>
+    </div><!-- // InterfExoQuest -->
+
+    <div id="InterfExoRep" class="brdr">
+
+            <div class="NoteBtnRep">
+
+                <div id="NotesBtnRep" class="btn-group">
+                    <button id="C" class="btn btnrep C btnresp">C</button>
+                    <button id="D" class="btn btnrep D btnresp">D</button>
+                    <button id="E" class="btn btnrep E btnresp">E</button>
+                    <button id="F" class="btn btnrep F btnresp">F</button>
+                    <button id="G" class="btn btnrep G btnresp">G</button>
+                    <button id="A" class="btn btnrep A btnresp">A</button>
+                    <button id="B" class="btn btnrep B btnresp">B</button>
+                </div>
+                </br>
+                <div id="NotesBtnRepSharp" class="btn-group">
+                    <button id="Cs" class="btn btnrep Cs">C#</button>
+                    <button id="Ds" class="btn btnrep Ds">D#</button>
+                    <button id="Fs" class="btn btnrep Fs">F#</button>
+                    <button id="Gs" class="btn btnrep Gs">G#</button>
+                    <button id="As" class="btn btnrep As">A#</button>
+                </div>
+            </div>
+
+            <div  class="IntBtnRep">
+                <div id="IntBtnRep" class="btn-group">
+                    <button data-int=1 class="btn btnrep i2m" title="Seconde mineure">2m</button>
+                    <button data-int=2 class="btn btnrep i2M" title="Seconde Majeure">2M</button>
+                    <button data-int=3 class="btn btnrep i3m" title="Tièrce mineure">3m</button>
+                    <button data-int=4 class="btn btnrep i3M" title="Tièrce Majeure">3M</button>
+                    <button data-int=5 class="btn btnrep i4j" title="Quarte Juste">4j</button>
+                    <button data-int=6 class="btn btnrep i4p" title="Quarte augmentée">4+</button>
+                </div></br>
+                <div id="IntBtnRep2" class="btn-group">
+                    <button data-int=7 class="btn btnrep i5j" title="Quinte Juste">5j</button>
+                    <button data-int=8 class="btn btnrep i6m" title="Sixte mineure">6m</button>
+                    <button data-int=9 class="btn btnrep i6M" title="Sixte Majeure">6M</button>
+                    <button data-int=10 class="btn btnrep i7m" title="Septième mineure">7m</button>
+                    <button data-int=11 class="btn btnrep i7M" title="Septième Majeure">7M</button>
+                    <button data-int=0 class="btn btnrep iOc" title="Octave">O</button>
+                </div>
+            </div>
+
+            <div class="AccBtnRep">
+                <div id="AccBtnRep" class="btn-group">
+                    <button class="btn btnrep fondamentale Ca" title="C">C</button>
+                    <button class="btn btnrep fondamentale Da" title="D">D</button>
+                    <button class="btn btnrep fondamentale Ea" title="E">E</button>
+                    <button class="btn btnrep fondamentale Fa" title="F">F</button>
+                    <button class="btn btnrep fondamentale Ga" title="G">G</button>
+                    <button class="btn btnrep fondamentale Aa" title="A">A</button>
+                    <button class="btn btnrep fondamentale Ba" title="B">B</button>
+                </div></br>
+                <div id="AccBtnRepCoul" class="btn-group">
+                    <button class="btn btnrep btncoul Maj M XM" title="M">Maj</button>
+                    <button class="btn btnrep btncoul min m Xm" title="m">min</button>
+                    <button class="btn btnrep btncoul Maj7 X7M" title="Maj7">Maj7</button>
+                    <button class="btn btnrep btncoul Sept sept X7" title="sept">7</button>
+                    <button class="btn btnrep btncoul min7 Xm7" title="min7">min7</button>
+                    <button class="btn btnrep btncoul min7b5 Xm7b5" title="min">min7b5</button>
+                </div>
+            </div> <!-- // AccBtnRep-->
+
+    </div> <!-- // InterfExoRep-->
+
+</div><!--// interface-->
+
+    <!--<div id="containerParal" class="containerParal">-->
+        <!--<ul id="scene" class="scene">-->
+            <!--<li id="texture" class="layer" data-depth="0.05" ></li>-->
+            <!--<li id="texture2" class="layer" data-depth="0.10"></li>-->
+            <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+            <![endif]-->
+            <!--<div id="fb-root"></div>-->
+            <!--<script>(function(d, s, id) {-->
+              <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+              <!--if (d.getElementById(id)) return;-->
+              <!--js = d.createElement(s); js.id = id;-->
+              <!--fjs.parentNode.insertBefore(js, fjs);-->
+            <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
+<div class="vect" id="NotesInfoFret"></div>
+
+
+
+            <!-- CONTENT -->
+
+<!--fireball-->
+<div id="flame"></div>
+<div id="coin"></div>
+<div id="champi"></div>
+
+
+
+
+<div class="guitar-outer">
+
+<!--<div id="cordesFrets" class="exo">--><!--</div>-->
+
+
+                <!-- HEAD -->
+                <div class="guitar-head"></div>
+
+                <div id="nbFrets" class="slider txtB"><div id="NotesSliderFrets"></div></div>
+
+                <div id="nbCordes" class="slider txtB"><div id="NotesSliderCordes"></div></div>
+
+                <!--info Octaves-->
+                <canvas id="NotesInfoOct" width="900" height="260"></canvas>
+
+                <!-- NECK -->
+                <div class="guitar-neck">
+
+                  <!-- FRETS -->
+                    <span class="fret1 fret"></span>
+                    <span class="fret2 fret"></span>
+                    <span class="fret3 fret"></span>
+                    <span class="fret4 fret"></span>
+                    <span class="fret5 fret"></span>
+                    <span class="fret6 fret"></span>
+                    <span class="fret7 fret"></span>
+                    <span class="fret8 fret"></span>
+                    <span class="fret9 fret"></span>
+                    <span class="fret10 fret"></span>
+                    <span class="fret11 fret"></span>
+                    <span class="fret12 fret"></span>
+                    <span class="fret13 fret"></span>
+                    <span class="fret14 fret"></span>
+                    <span class="fret15 fret"></span>
+                    <span class="fret16 fret"></span>
+                    <span class="fret17 fret"></span>
+                    <span class="fret18 fret"></span>
+                    <span class="fret19 fret"></span>
+                    <span class="fret20 fret"></span>
+                    <span class="fret21 fret"></span>
+                    <span class="fret22 fret"></span>
+                  <!-- /FRETS -->
+
+                  <!-- /MARKERS  -->
+                    <span class="marker1 marker"><i></i></span>
+                    <span class="marker2 marker"><i></i></span>
+                    <span class="marker3 marker"><i></i></span>
+                    <span class="marker4 marker"><i></i></span>
+                    <span class="marker5 marker"><i></i></span>
+                    <span class="marker5b marker"><i></i></span>
+                    <span class="marker6 marker"><i></i></span>
+                    <span class="marker7 marker"><i></i></span>
+                    <span class="marker8 marker"><i></i></span>
+                    <span class="marker9 marker"><i></i></span>
+                  <!-- /MARKERS -->
+
+                  <!-- STRINGS -->
+                  <!-- HIGH E -->
+                    <span class="string-highe string">
+                        <!-- NOTES -->
+                        <!--root-->
+                        <span class="note note-e pos0"></span>
+                        <span class="note note-f pos1"></span>
+                        <span class="note note-fs pos2"></span>
+                        <span id="noteTest" class="note note-g pos3"></span>
+                        <span class="note note-gs pos4"></span>
+                        <span class="note note-a pos5"></span>
+                        <span class="note note-bf pos6"></span>
+                        <span class="note note-b pos7"></span>
+                        <span class="note note-c pos8"></span>
+                        <span class="note note-cs pos9"></span>
+                        <span class="note note-d pos10"></span>
+                        <span class="note note-ds pos11"></span>
+                        <span class="note note-e pos12"></span>
+                        <span class="note note-f pos13"></span>
+                        <span class="note note-fs pos14"></span>
+                        <span class="note note-g pos15"></span>
+                        <span class="note note-gs pos16"></span>
+                        <span class="note note-a pos17"></span>
+                        <span class="note note-bf pos18"></span>
+                        <span class="note note-b pos19"></span>
+                        <span class="note note-c pos20"></span>
+                        <span class="note note-cs pos21"></span>
+                        <span class="note note-d pos22"></span>
+                      <!-- NOTES -->
+                    </span>
+                    <!-- /HIGH E -->
+                    <!-- B -->
+                    <span class="string-b string">
+                        <!-- NOTES -->
+                        <span class="note note-b pos0"></span>
+                        <span class="note note-c pos1"></span>
+                        <span class="note note-cs pos2"></span>
+                        <span class="note note-d pos3"></span>
+                        <span class="note note-ds pos4"></span>
+                        <span class="note note-e pos5"></span>
+                        <span class="note note-f pos6"></span>
+                        <span class="note note-fs pos7"></span>
+                        <span class="note note-g pos8"></span>
+                        <span class="note note-gs pos9"></span>
+                        <span class="note note-a pos10"></span>
+                        <span class="note note-bf pos11"></span>
+                        <span class="note note-b pos12"></span>
+                        <span class="note note-c pos13"></span>
+                        <span class="note note-cs pos14"></span>
+                        <span class="note note-d pos15"></span>
+                        <span class="note note-ds pos16"></span>
+                        <span class="note note-e pos17"></span>
+                        <span class="note note-f pos18"></span>
+                        <span class="note note-fs pos19"></span>
+                        <span class="note note-g pos20"></span>
+                        <span class="note note-gs pos21"></span>
+                        <span class="note note-a pos22"></span>
+                        <!-- / NOTES -->
+                    </span>
+                    <!-- /B -->
+                    <!-- G -->
+                    <span class="string-g string">
+                        <!-- NOTES -->
+                        <span class="note note-g pos0"></span>
+                        <span class="note note-gs pos1"></span>
+                        <span class="note note-a pos2"></span>
+                        <span class="note note-bf pos3"></span>
+                        <span class="note note-b pos4"></span>
+                        <span class="note note-c pos5"></span>
+                        <span class="note note-cs pos6"></span>
+                        <span class="note note-d pos7"></span>
+                        <span class="note note-ds pos8"></span>
+                        <span class="note note-e pos9"></span>
+                        <span class="note note-f pos10"></span>
+                        <span class="note note-fs pos11"></span>
+                        <span class="note note-g pos12"></span>
+                        <span class="note note-gs pos13"></span>
+                        <span class="note note-a pos14"></span>
+                        <span class="note note-bf pos15"></span>
+                        <span class="note note-b pos16"></span>
+                        <span class="note note-c pos17"></span>
+                        <span class="note note-cs pos18"></span>
+                        <span class="note note-d pos19"></span>
+                        <span class="note note-ds pos20"></span>
+                        <span class="note note-e pos21"></span>
+                        <span class="note note-f pos22"></span>
+                        <!-- / NOTES -->
+                    </span>
+                    <!-- /G -->
+                    <!-- D -->
+                    <span class="string-d string">
+                        <!-- NOTES -->
+                        <span class="note note-d pos0"></span>
+                        <span class="note note-ds pos1"></span>
+                        <span class="note note-e pos2"></span>
+                        <span class="note note-f pos3"></span>
+                        <span class="note note-fs pos4"></span>
+                        <span class="note note-g pos5"></span>
+                        <span class="note note-gs pos6"></span>
+                        <span class="note note-a pos7"></span>
+                        <span class="note note-bf pos8"></span>
+                        <span class="note note-b pos9"></span>
+                        <span class="note note-c pos10"></span>
+                        <span class="note note-cs pos11"></span>
+                        <span class="note note-d pos12"></span>
+                        <span class="note note-ds pos13"></span>
+                        <span class="note note-e pos14"></span>
+                        <span class="note note-f pos15"></span>
+                        <span class="note note-fs pos16"></span>
+                        <span class="note note-g pos17"></span>
+                        <span class="note note-gs pos18"></span>
+                        <span class="note note-a pos19"></span>
+                        <span class="note note-bf pos20"></span>
+                        <span class="note note-b pos21"></span>
+                        <span class="note note-c pos22"></span>
+                        <!-- / NOTES -->
+                    </span>
+                    <!-- / D -->
+                    <!-- A -->
+                    <span class="string-a string">
+                        <!-- NOTES -->
+                        <span class="note note-a pos0"></span>
+                        <span class="note note-bf pos1"></span>
+                        <span class="note note-b pos2"></span>
+                        <span class="note note-c pos3"></span>
+                        <span class="note note-cs pos4"></span>
+                        <span class="note note-d pos5"></span>
+                        <span class="note note-ds pos6"></span>
+                        <span class="note note-e pos7"></span>
+                        <span class="note note-f pos8"></span>
+                        <span class="note note-fs pos9"></span>
+                        <span class="note note-g pos10"></span>
+                        <span class="note note-gs pos11"></span>
+                        <span class="note note-a pos12"></span>
+                        <span class="note note-bf pos13"></span>
+                        <span class="note note-b pos14"></span>
+                        <span class="note note-c pos15"></span>
+                        <span class="note note-cs pos16"></span>
+                        <span class="note note-d pos17"></span>
+                        <span class="note note-ds pos18"></span>
+                        <span class="note note-e pos19"></span>
+                        <span class="note note-f pos20"></span>
+                        <span class="note note-fs pos21"></span>
+                        <span class="note note-g pos22"></span>
+                        <!-- / NOTES -->
+                    </span>
+                    <!-- /A -->
+                    <!-- LOW E -->
+                    <span class="string-lowe string">
+                       <!-- NOTES -->
+                        <span class="note note-e pos0"></span>
+                        <span class="note note-f pos1"></span>
+                        <span class="note note-fs pos2"></span>
+                        <span class="note note-g pos3"></span>
+                        <span class="note note-gs pos4"></span>
+                        <span class="note note-a pos5"></span>
+                        <span class="note note-bf pos6"></span>
+                        <span class="note note-b pos7"></span>
+                        <span class="note note-c pos8"></span>
+                        <span class="note note-cs pos9"></span>
+                        <span class="note note-d pos10"></span>
+                        <span class="note note-ds pos11"></span>
+                        <span class="note note-e pos12"></span>
+                        <span class="note note-f pos13"></span>
+                        <span class="note note-fs pos14"></span>
+                        <span class="note note-g pos15"></span>
+                        <span class="note note-gs pos16"></span>
+                        <span class="note note-a pos17"></span>
+                        <span class="note note-bf pos18"></span>
+                        <span class="note note-b pos19"></span>
+                        <span class="note note-c pos20"></span>
+                        <span class="note note-cs pos21"></span>
+                        <span class="note note-d pos22"></span>
+                      <!-- NOTES -->
+                    </span>
+                    <!-- /LOW E -->
+                  <!-- / STRINGS -->
+                </div>
+                <!-- / NECK -->
+
+                <!-- GUITAR BODY -->
+                <div class="guitar-body"></div>
+
+              </div><!--guitOuter-->
+
+<ul class="flip-counter small" id="myCounter"></ul>
+
+
+<!--COMPTEUR GUIT-->
+<div class="guitarCounter" id="slider">
+    <img class="guitcountimg opaque" src="./img/scortar/guit1.png" alt="compteur" />
+    <img class="guitcountimg" src="./img/scortar/guit2.png" />
+    <img class="guitcountimg" src="./img/scortar/guit3.png" />
+    <img class="guitcountimg" src="./img/scortar/guit4.png" />
+    <img class="guitcountimg" src="./img/scortar/guit5.png" />
+    <div id="score" ></div>
+</div>
+
+
+    <!--audio-->
+    <div id="audio">
+
+        <div id="point">
+            <!--anim-->
+            <audio class="soundPoint" id="hadoken" controls>
+                <source src="sound/Counter/Point/hadoken.ogg" type="audio/ogg">
+                <source src="sound/Counter/Point/hadoken.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="soundPoint" id="soundCoin" controls>
+                <source src="sound/Counter/Point/coin.ogg" type="audio/ogg">
+                <source src="sound/Counter/Point/coin.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="soundPoint" id="powerUp" controls>
+                <source src="sound/Counter/Point/powerUp.ogg" type="audio/ogg">
+                <source src="sound/Counter/Point/powerUp.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <!--audio-->
+            <audio class="soundPoint" id="excellent" controls>
+                <source src="sound/Counter/Point/excellent.ogg" type="audio/ogg">
+                <source src="sound/Counter/Point/excellent.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="soundPoint" id="impressive" controls>
+                <source src="sound/Counter/Point/impressive.ogg" type="audio/ogg">
+                <source src="sound/Counter/Point/impressive.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+
+            <audio class="soundPoint" id="accuracy" controls>
+                <source src="sound/Counter/Point/accuracy.ogg" type="audio/ogg">
+                <source src="sound/Counter/Point/accuracy.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="soundPoint" id="perfect" controls>
+                <source src="sound/Counter/Point/perfect.ogg" type="audio/ogg">
+                <source src="sound/Counter/Point/perfect.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="soundPoint" id="takenlead" controls>
+                <source src="sound/Counter/Point/takenlead.ogg" type="audio/ogg">
+                <source src="sound/Counter/Point/takenlead.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+        </div>
+
+        <div id="pointz"> <!--MISC-->
+            <audio class="pointz" id="one" controls>
+                <source src="sound/Counter/Misc/one.ogg" type="audio/ogg">
+                <source src="sound/Counter/Misc/one.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="pointz" id="fatcat" controls>
+                <source src="sound/Counter/Misc/fatcat.ogg" type="audio/ogg">
+                <source src="sound/Counter/Misc/fatcat.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="pointz" id="perfectgov" controls>
+                <source src="sound/Counter/Misc/perfectgov.ogg" type="audio/ogg">
+                <source src="sound/Counter/Misc/perfectgov.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="pointz" id="santeria" controls>
+                <source src="sound/Counter/Misc/santeria.ogg" type="audio/ogg">
+                <source src="sound/Counter/Misc/santeria.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+        </div>
+
+        <div id="misc">
+            <audio class="fight" id="fight" controls>
+                <source src="sound/Counter/Misc/fight.ogg" type="audio/ogg">
+                <source src="sound/Counter/Misc/fight.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="carioca" id="carioca" controls>
+                <source src="sound/Counter/Misc/carioca.ogg" type="audio/ogg">
+                <source src="sound/Counter/Misc/carioca.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="hit" id="hit" controls> <!--X 2-->
+                <source src="sound/Counter/Misc/hit.ogg" type="audio/ogg">
+                <source src="sound/Counter/Misc/hit.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+        </div>
+
+        <div id="soundFalse">
+            <audio class="soundFalse" id="humiliation" controls>
+                <source src="sound/Counter/False/humiliation.ogg" type="audio/ogg">
+                <source src="sound/Counter/False/humiliation.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="soundFalse" id="breathing" controls>
+                <source src="sound/Counter/False/breathing.ogg" type="audio/ogg">
+                <source src="sound/Counter/False/breathing.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="soundFalse" id="bluf" controls>
+                <source src="sound/Counter/False/bluf.ogg" type="audio/ogg">
+                <source src="sound/Counter/False/bluf.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="soundFalse" id="content" controls>
+                <source src="sound/Counter/False/content.ogg" type="audio/ogg">
+                <source src="sound/Counter/False/content.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="soundFalse" id="whisky" controls>
+                <source src="sound/Counter/False/whisky.ogg" type="audio/ogg">
+                <source src="sound/Counter/False/whisky.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="soundFalse" controls>
+                <source src="sound/Counter/False/hit.ogg" type="audio/ogg">
+                <source src="sound/Counter/False/hit.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+        </div>
+
+        <div id="guitSd">
+            <audio class="guitSd" id="audio-highe" controls>
+                <source src="sound/GuitarOpen/1st_String_E_64kb.ogg" type="audio/ogg">
+                <source src="sound/GuitarOpen/1st_String_E_64kb.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="guitSd" id="audio-b" controls>
+                <source src="sound/GuitarOpen/2nd_String_B__64kb.ogg" type="audio/ogg">
+                <source src="sound/GuitarOpen/2nd_String_B__64kb.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="guitSd" id="audio-g" controls>
+                <source src="sound/GuitarOpen/3rd_String_G_64kb.ogg" type="audio/ogg">
+                <source src="sound/GuitarOpen/3rd_String_G_64kb.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="guitSd" id="audio-d" controls>
+                <source src="sound/GuitarOpen/4th_String_D_64kb.ogg" type="audio/ogg">
+                <source src="sound/GuitarOpen/4th_String_D_64kb.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="guitSd" id="audio-a" controls>
+                <source src="sound/GuitarOpen/5th_String_A_64kb.ogg" type="audio/ogg">
+                <source src="sound/GuitarOpen/5th_String_A_64kb.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+            <audio class="guitSd" id="audio-lowe" controls>
+                <source src="sound/GuitarOpen/6th_String_E_64kb.ogg" type="audio/ogg">
+                <source src="sound/GuitarOpen/6th_String_E_64kb.mp3" type="audio/mpeg">
+                Pas de son !
+            </audio>
+        </div>
+    </div><!--audio-->
+
+    <!--<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+    <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>-->
+    <!--<script src="jqueryui/js/jquery-1.9.1.js"></script>-->
+    <!--<script src="jqueryui/js/jquery-ui-1.10.3.custom.js"></script>-->
+
+
+    <!--<script src="js/plugins.js"></script>-->
+
+
+    <!--<script src="js/jquery.parallax.js"></script>-->
+    <!--<script src="js/raphael-min.js"></script>-->
+
+    <!--<script src="js/raphael.js"></script>-->
+    <!--Flip fait pas bon menage avec les bouton radio !!!!-->
+        <script type="text/javascript" src="counter/counter/js/flipcounter.js"></script>
+
+<!--<script src="WIP/bootstrap-3.0.0/dist/js/bootstrap.min.js"></script>-->
+
+
+<!--&lt;!&ndash;jq-ui but !!!&ndash;&gt;-->
+
+<!--<script src="WIP/jquery-ui-1.10.3.custom/development-bundle/ui/jquery.ui.button.js"></script>-->
+<!--<link rel="stylesheet" href="WIP/jquery-ui-1.10.3.custom/development-bundle/demos/demos.css">-->
+<!--<script>$(function() {$( "#check" ).button();$( "#format" ).buttonset();$( "#radio" ).buttonset();});</script>-->
+<!--&lt;!&ndash; // jq-ui but //&ndash;&gt;-->
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!--lol-->
+<!--<script type="text/javascript" src="http://dl.dropboxusercontent.com/s/ctyuidrwm6tril7/053_thistle1_fcdfff_24work.blogspot.com.js"></script>-->
+
+
+    </body>
+</html>

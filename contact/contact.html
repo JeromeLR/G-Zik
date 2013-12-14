@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Un retour !</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" href="./staïleuh.css" />
+
+
+</head>
+
+<body>
+<div class="content">
+    <div id="logo"></div>
+	<h1>Un retour !</h1>
+
+    <!--<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>-->
+	<form method="post" action="process.php">
+
+        <div id="cnamne" class="fifty">
+            <label id="txtnam" for="name">Nom</label>
+            <input name="name" type="text" id="name">
+        </div>
+
+        <div id="com">
+            <label id="txtcom" for="comm">Un commentaire ?   </label>
+            <textarea name="comments" rows="10" id="comm" placeholder="do ré mi..."></textarea>
+        </div>
+
+		<!--<div id="cemail" class="fifty">-->
+			<!--<label for="email">Email</label>-->
+			<!--<input name="email" type="email" id="email">-->
+		<!--</div>-->
+
+		<div class="hide">
+			<label for="spam">What is two plus two?</label>
+			<input name="spam" type="text" size="4" id="spam">
+		</div>
+		<div id="cok">
+			<input type="submit" name="submit" value="Envoyer" id="envoy">
+		</div>
+	</form>
+    <hr style="width:300px; height:1px" />
+
+    <div id ="g">
+        </br>
+        <p class="gras">Suggestions</p>
+        <ul>
+            <li>Des <em>explications</em> pour chaque exo !</li>
+            <li><em>Du son</em> de guitare ! Pour l'instant seulement les cordes à vide...</li>
+            <li>Bouton pour passer en notation française <em>Do Ré Mi</em>...</li>
+            <li>Manque flagrant de <em>Water Poney</em></li>
+            <li><em>Exercices inversés</em> : Réponses par clic sur le manche</li>
+            <li>Question suivante automatique, sans avoir besoin de cliquer sur le bouton rouge.</li>
+            <li><em>Score</em> plus juste (+ de points quand bonne réponse du premier coup)</li>
+            <li>Ajouter un <em>timer</em> pour stresser en apprenant.</li>
+        </ul>
+        <p class="gras">Tech</p>
+        <ul>
+            <li><em>IE, Safari :</em> Soucis à régler semble-t'il...</li>
+            <li>Un zoli <em>fond parallax</em> qui bouge en fonction de la souris</li>
+            <li> <em>fond parallax</em> qui bouge en fonction de la souris</li>
+            <li>Génération de CSS avec <em>LESS</em>.</li>
+
+            <li>Une version <em>mobile</em>, phonegap ?</li>
+            <li>Mettre le projet sur <em>Github</em></li>
+            <li><em>PHP ou node.js</em> pour suivre son évolution ?</li>
+            <li>Je sens qu'il n'y aura pas de <em>fin</em></li>
+        </ul>
+
+        <p>Provenance des sons/bruitages : <A HREF="http://fr.wikipedia.org/wiki/Quake_III_Arena">Quake</A>,
+            <A HREF="http://fr.wikipedia.org/wiki/Street_Fighter_II:_The_World_Warrior">Street fighter</A>,
+            <A HREF="http://www.dreamtheater.net/">Dream Theater</A>,
+            <A HREF="http://www.nofxofficialwebsite.com/">Nofx</A>,
+            <A HREF="http://fr.wikipedia.org/wiki/Sublime_(groupe)">Sublime</A>,
+            <A HREF="http://mario.nintendo.com/">Mario</A>,
+            <A HREF="http://fr.wikipedia.org/wiki/La_Cit%C3%A9_de_la_peur_(film,_1994)">Cité de la Peur</A>
+            ... (désolé)</p>
+
+        </br>
+        <p id="sign"><A HREF="mailto:jerome@bourdais.info">Jérôme Bourdais</A></p>
+        <p id="plus">Fretboard from <A HREF="http://www.ghosthorses.co.uk/portfolio/fretmap/">Stephen Fairbanks</A></p>
+
+        </br>
+
+    </div><!--g-->
+</div><!--content-->
+</body>
+</html>

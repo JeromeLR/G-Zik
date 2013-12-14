@@ -1,0 +1,134 @@
+body {
+    /*background: #f7f7f7;*/
+    font: 100%/1.375 georgia, serif;
+    padding: 20px 40px;
+}
+
+form div {margin-bottom: 10px;}
+
+.content {
+    width: 40%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 0 20px 0;
+    font-size: 175%;
+    font-family: calibri, arial, sans-serif;
+}
+
+label {
+    margin-bottom: 2px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    font-size: 0.75em;
+    width: 98%;
+    font-family: arial;
+    border: 1px solid #ebebeb;
+    padding: 4px;
+    display: block;
+}
+
+input[type="radio"] {
+    margin: 0 5px 0 0;
+    /*background-color: white;*/
+}
+
+#name{
+
+    background-color: white;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0px 0px 2px 1px #000;
+    box-shadow: 0px 0px 2px 1px #000;
+}
+
+textarea {
+    overflow: auto;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0px 0px 2px 1px #000;
+    box-shadow: 0px 0px 2px 1px #000;
+
+}
+
+.hide {
+    display: none;
+}
+
+
+#cnamne{
+    width:30%;
+}
+
+#txtnam{
+    margin: 5px;
+}
+/*#cemail{width:40%;}*/
+
+#comm{
+    width:70%;
+}
+
+#cok{}
+
+#envoy{
+    background-color: white;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#logo{
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    position: fixed;
+    top:5%;
+    left:22%;
+    width:120px;
+    height: 130px;
+}
+
+.barre{
+    text-decoration:line-through ;
+}
+
+#g {
+    width:70%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.67);
+}
+.gras{
+    font-weight: bold;
+    /*text-align: center;*/
+    margin-left: 15px;
+}
+
+p{margin-left:15px;}
+
+#sign{
+    text-align: right;
+    font-weight: bold;
+    margin:10px;
+
+}
+#plus{
+    margin:10px;
+    text-align: right;
+}
+
+em
+{
+    font-weight: bold;
+    font-style: normal;
+}

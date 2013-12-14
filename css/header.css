@@ -1,0 +1,124 @@
+#Interface,#logoRetour{
+    margin-top:10px;
+}
+#logoRetour{
+    margin-top:20px;
+
+}
+.brand{
+    color:black;
+}
+.navbar .brand-bootbus {
+    font-size: 30px;
+    cursor: pointer;
+    text-shadow: none;
+    color: white;
+    font-weight: bold;
+}
+.navbar .brand {
+    float: left;
+    display: block;
+    padding: 10px 20px 10px;
+    margin-left: -20px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #777777;
+    text-shadow: 0 1px 0 #ffffff;
+}
+
+.navbar .brand {
+    float: left;
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 200;
+    /*color: #777;*/
+    width: 95px;
+    height: 60px;
+    /*background: none;*/
+/*url(../img/logo.png) no-repeat center;*/
+    font: 0/0 a;
+    /*color: transparent;*/
+    text-shadow: none;
+    /*background-color: transparent;*/
+    border: 0;
+}
+
+
+a {
+    color: #0088cc;
+    text-decoration: none;
+}
+-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+}
+.container {
+    text-align: center;
+}
+.navbar {
+    color: #777777;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+}
+
+#navin{
+    background-color: black;
+}
+
+header,.navbar,#navin,.container,#index{
+    height:50px;
+}
+#index{
+    /*margin:0;*/
+    color:white;
+    background-image: none;
+    float :left;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 0px;
+    margin-left: -5px;
+    margin-right: 0px;
+    margin-top: 2px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-shadow: none;
+   }
+#gzcont{
+border-bottom-left-radius: 3px;
+border-bottom-right-radius: 3px;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+color: rgb(255, 255, 255);
+cursor: auto;
+display: block;
+float: none;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 17px;
+font-weight: bold;
+height: 20px;
+line-height: 20px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+padding-bottom: 10px;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 10px;
+text-align: center;
+text-decoration: none solid rgb(255, 255, 255);
+text-shadow: none;
+}
