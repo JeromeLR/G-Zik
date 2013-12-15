@@ -19,7 +19,7 @@ Repositories used
 
 How to play (french)
 --------------------
-1. Notes du manche
+**1. Notes du manche**
 
 Choisir la zone de travail avec les curseurs rouges autour du manche.
 Lancer une question avec le bouton rouge.
@@ -32,7 +32,7 @@ Ne pas oublier : 1 ton entre les notes sauf 1/2 entre Mi/Fa et Si/Do.
 
 Les cordes à vide en standard : Mi La Ré Sol Si Mi.
 
-2. Intervalles entres les notes
+**2. Intervalles entres les notes**
 
 Exercice intéressant pour comprendre la construction des accords.
 
@@ -44,10 +44,15 @@ Idem, bouton rouge pour une nouvelle question.
 
 Par exemple, la modification de la tièrce d'un accord change sa couleur de mineur en majeur.
 
-3. Accords
+**3. Accords**
 
 Questions sur les accords ouverts et/ou barrés.
 
 De la même manière, le bouton rouge sert à passer à la question suivante.
 
 Il existe bien sûr beaucoup plus d'accords, mais pour l'instant c'est déjà pas mal !
+
+Mobile
+------
+
+Light version in 800*480px (landscape) working on an android phone
