@@ -56,3 +56,4 @@ Mobile
 ------
 
 Light version in 800*480px (landscape) working on an android phone
+Code for touchscreen tablet as soon as i have one in hands

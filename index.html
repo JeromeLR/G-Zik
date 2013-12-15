@@ -3,7 +3,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]> <html class="no-js"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
     
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
@@ -24,12 +24,12 @@
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/font-awesome-ie7.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="counter/counter/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="counter/css/style.css" />
 
-    <link rel="stylesheet" href="WIP/jquery-ui-1.10.3.custom/development-bundle/themes/base/jquery.ui.all.css">
+    <link rel="stylesheet" href="css/jquery.ui.all.css">
 
-    <script src="WIP/jquery-ui-1.10.3.custom/development-bundle/jquery-1.9.1.js"></script>
-    <script src="WIP/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.js"></script>
 
     <link rel="stylesheet" href="css/toggle-switch.css">
 
@@ -40,7 +40,6 @@
 </head>
 
 <body>
-<!--<p id="gresponsive"></p>-->
 
 
 <header>
@@ -103,8 +102,6 @@
 </div>
 
 <div id="ginfo" data-toggle="modal" href="#infos" ><p>Info</p></div>
-
-<!--<a class="btn btn-primary" data-toggle="modal" href="#infos" >Info</a>-->
 
 
 <a id="ghref" href="./contact/contact.html">
@@ -246,39 +243,23 @@
 
 </div><!--// interface-->
 
-    <!--<div id="containerParal" class="containerParal">-->
-        <!--<ul id="scene" class="scene">-->
-            <!--<li id="texture" class="layer" data-depth="0.05" ></li>-->
-            <!--<li id="texture2" class="layer" data-depth="0.10"></li>-->
-            <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-            <![endif]-->
-            <!--<div id="fb-root"></div>-->
-            <!--<script>(function(d, s, id) {-->
-              <!--var js, fjs = d.getElementsByTagName(s)[0];-->
-              <!--if (d.getElementById(id)) return;-->
-              <!--js = d.createElement(s); js.id = id;-->
-              <!--fjs.parentNode.insertBefore(js, fjs);-->
-            <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
 
 <div class="vect" id="NotesInfoFret"></div>
 
+<!-- CONTENT -->
 
-
-            <!-- CONTENT -->
-
-<!--fireball-->
 <div id="flame"></div>
 <div id="coin"></div>
 <div id="champi"></div>
 
 
-
-
 <div class="guitar-outer">
 
 <!--<div id="cordesFrets" class="exo">--><!--</div>-->
-
 
                 <!-- HEAD -->
                 <div class="guitar-head"></div>
@@ -288,7 +269,7 @@
                 <div id="nbCordes" class="slider txtB"><div id="NotesSliderCordes"></div></div>
 
                 <!--info Octaves-->
-                <canvas id="NotesInfoOct" width="900" height="260"></canvas>
+                <!--<canvas id="NotesInfoOct" width="900" height="260"></canvas>-->
 
                 <!-- NECK -->
                 <div class="guitar-neck">
@@ -701,7 +682,7 @@
 
     <!--<script src="js/raphael.js"></script>-->
     <!--Flip fait pas bon menage avec les bouton radio !!!!-->
-        <script type="text/javascript" src="counter/counter/js/flipcounter.js"></script>
+        <script type="text/javascript" src="counter/js/flipcounter.js"></script>
 
 <!--<script src="WIP/bootstrap-3.0.0/dist/js/bootstrap.min.js"></script>-->
 

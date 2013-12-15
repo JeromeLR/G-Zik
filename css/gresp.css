@@ -3,9 +3,10 @@
     background-repeat:no-repeat;
     /*padding:10px;*/
 }
-#coin{
-    visibility:hidden;
-}
+/*.guitar-outer{*/
+    /*position: relative;*/
+    /*top:200px;*/
+/*}*/
 
 
 /*WIDE*/
@@ -17,6 +18,8 @@
         position: relative;
         top:200px;
     }
+
+
     .guitar-head{
         top:-200px;
         width: 400px;
@@ -167,6 +170,9 @@
         max-height: 480px;
         background: none;
         top:0;
+    }
+    #coin{
+        visibility:hidden;
     }
     header{
         width: 0;height:0px;visibility:hidden;
@@ -386,6 +392,9 @@ ol li ul li{
 @media (max-width:1043px) {
     #ginfo{
         left:70%;
+    }
+    #coin{
+        visibility:hidden;
     }
 }
 @media (max-width:800px) {
