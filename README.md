@@ -20,6 +20,7 @@ Repositories used
 How to play (french)
 --------------------
 1. Notes du manche
+
 Choisir la zone de travail avec les curseurs rouges autour du manche.
 Lancer une question avec le bouton rouge.
 Répondre à l'aide des boutons sur la droite : 7 notes de la gamme + 5 dièses.
@@ -32,6 +33,7 @@ Ne pas oublier : 1 ton entre les notes sauf 1/2 entre Mi/Fa et Si/Do.
 Les cordes à vide en standard : Mi La Ré Sol Si Mi.
 
 2. Intervalles entres les notes
+
 Exercice intéressant pour comprendre la construction des accords.
 
 Le but est de trouver l'intervalle entre 2 notes aléatoires.
@@ -43,6 +45,7 @@ Idem, bouton rouge pour une nouvelle question.
 Par exemple, la modification de la tièrce d'un accord change sa couleur de mineur en majeur.
 
 3. Accords
+
 Questions sur les accords ouverts et/ou barrés.
 
 De la même manière, le bouton rouge sert à passer à la question suivante.
