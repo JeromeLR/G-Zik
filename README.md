@@ -55,5 +55,6 @@ Il existe bien sûr beaucoup plus d'accords, mais pour l'instant c'est déjà pa
 Mobile
 ------
 
-Light version in 800*480px (landscape) working on an android phone
+Light version in 800*480px (landscape) working on an android phone.
+
 Code for touchscreen tablet as soon as i have one in hands
