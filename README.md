@@ -25,7 +25,9 @@ Text & sound in french for the moment
 
 Choose working zone thanks to the 2 red sliders.
 Launch a question with the red button.
+
 Click on the right buttons to answer : 7 scale notes + 5 sharp notes.
+
 2 tries : the first fault display your error.
 
 >Choisir la zone de travail avec les curseurs rouges autour du manche.
@@ -42,8 +44,11 @@ Click on the right buttons to answer : 7 scale notes + 5 sharp notes.
 ####2. Intervalles entres les notes / Notes intervals
 
 The goal is to find the interval between 2 random notes.
+
 The first one will be in the slider working zone.
+
 New question with the red button.
+
 
 >Exercice intéressant pour comprendre la construction des accords.
 >
@@ -58,6 +63,7 @@ New question with the red button.
 ####3. Accords / Chords
 
 Red button to launch a question on a chord.
+
 Not all of them are listed.
 
 >Questions sur les accords ouverts et/ou barrés.
